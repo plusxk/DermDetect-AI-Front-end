@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>圖片上傳介面</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">圖片上傳介面</h1>
+        <form id="upload-form">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">選擇圖片上傳</label>
+                <input class="form-control" type="file" id="formFile" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">上傳</button>
+        </form>
+        <!-- 顯示回傳文字的區域 -->
+        <div id="response" class="mt-4"></div>
+    </div>
+
+    <!-- 引入 Bootstrap JS（可選） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 引入 script.js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
