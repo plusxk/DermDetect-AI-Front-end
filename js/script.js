@@ -44,7 +44,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
                     ${data.result.predicted_class}
                 </div>
                 <div class="alert alert-success" role="alert">
-                    confidence:
+                    confidence: 
                     ${data.result.confidence}
                 </div>
             `;
