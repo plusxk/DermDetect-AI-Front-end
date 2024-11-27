@@ -1,5 +1,5 @@
 // script.js
-document.getElementById('upload-form').addEventListener('submit', async function(event) {
+document.getElementById('upload-form').addEventListener('submit', async function (event) {
     event.preventDefault();
 
     var fileInput = document.getElementById('formFile');
@@ -40,7 +40,12 @@ document.getElementById('upload-form').addEventListener('submit', async function
         } else {
             document.getElementById('response').innerHTML = `
                 <div class="alert alert-success" role="alert">
-                    ${data.result}
+                    predicted_class: 
+                    ${data.result.predicted_class}
+                </div>
+                <div class="alert alert-success" role="alert">
+                    confidence:
+                    ${data.result.confidence}
                 </div>
             `;
         }
